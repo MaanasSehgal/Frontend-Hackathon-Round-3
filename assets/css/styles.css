@@ -61,6 +61,10 @@ nav h1 {
     align-items: center;
 }
 
+.navbar-right a {
+    font-size: 1.2vw;
+}
+
 .logo {
     color: white;
     font-size: 24px;
@@ -79,8 +83,8 @@ input {
     width: 100%;
     box-sizing: border-box;
     transition: border-color 0.3s, box-shadow 0.3s;
-    border-bottom: 2px solid #9147ff; /* Twitch purple */
-    box-shadow: 0 2px 10px rgba(145, 71, 255, 0.5); /* Focus shadow effect */
+    border-bottom: 2px solid #9147ff;
+    box-shadow: 0 2px 10px rgba(145, 71, 255, 0.5);
 }
 
 input::placeholder {
@@ -468,23 +472,22 @@ ul {
 /* Profile page */
 .profile-page1 {
     width: 100%;
-    height: 330vh;
+    height: auto;
     display: flex;
     justify-content: center;
 }
 
 .profile-page1-container {
+    padding: 0 30px;
     margin: 18vh 0;
     border-radius: 3vw;
     width: 60vw;
-    height: 140vw;
+    height: auto;
     background-color: #1e1e20;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-
 
 .editform-container {
     margin: 18vh 0 0 0;
@@ -516,36 +519,6 @@ ul {
     padding: 1.3rem;
     background-color: transparent;
     box-shadow: 0 0 5px purple;
-}
-
-@media (max-width: 840px) {
-    .profile-page1-container {
-        height: 170vw;
-    }
-}
-
-@media (max-width: 650px) {
-    .profile-page1-container {
-        height: 230vh;
-    }
-}
-
-@media (max-width: 600px) {
-    .profile-page1-container {
-        height: 250vh;
-    }
-}
-
-@media (max-width: 400px) {
-    .profile-page1-container {
-        height: 260vh;
-    }
-}
-
-@media (max-width: 320px) {
-    .profile-page1-container {
-        height: 260vh;
-    }
 }
 
 .profile-page1-container img {
@@ -1181,15 +1154,6 @@ ul {
     margin-top: 1vw;
 }
 
-.company-page-left {
-    margin-top: 3vw;
-    width: 80%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: red;
-}
-
 .company-follow-div {
     display: flex;
 }
@@ -1201,17 +1165,25 @@ ul {
     padding: 1vw 0.5vw;
     border-radius: 30px;
     transition: background-color 0.3s ease;
-    width: 8vw;
+    min-width: 10vw;
     margin-left: 3vw;
     font-size: 1.2vw;
 }
 
+.company-page-left {
+    margin-top: 3vw;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .company-page-left p {
+    margin-top: 15px;
     color: white;
-    font-size: 1.2vw;
-    margin: 1vw;
+    font-size: 1.5vw;
     padding: 1vw;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .company-follow-btn:hover {
@@ -1264,6 +1236,20 @@ ul {
 .card-lower p {
     font-size: 1rem;
     color: #ccc;
+    margin-bottom: 3px;
+}
+
+.card-lower a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1vw;
+    border-radius: 30px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.card-lower a:hover {
+    background-color: #4e1d9e;
 }
 
 @media (max-width: 1100px) {
@@ -1429,4 +1415,150 @@ ul {
     text-transform: uppercase;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
+}
+
+.jobs-page {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.jobs-container {
+    margin: 18vh 0;
+    border-radius: 3vw;
+    width: 60vw;
+    height: auto;
+    background-color: #1e1e20;
+    display: flex;
+    flex-direction: column;
+    padding: 3vw;
+    color: white;
+}
+
+.job {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 1vw;
+    border-bottom: 1px solid white;
+}
+
+@media (max-width: 570px) {
+    .jobs-container {
+        width: 80vw;
+    }
+    .job {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .apply-div {
+        height: 50px;
+    }
+    .job a {
+        font-size: 30px;
+        width: auto;
+        height: auto;
+    }
+}
+
+.job > img {
+    width: 4vw;
+    height: 4vw;
+    margin: 0 1vw;
+}
+
+.company-logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.job-details {
+    flex-grow: 1;
+}
+
+.job-details h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.job-details p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.apply-div a {
+    padding: 1vw 2vw;
+    background-color: transparent;
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-size: 1vw;
+}
+
+.apply-div a:hover {
+    box-shadow: 0px 6px 5px rgba(183, 150, 209, 0.2);
+}
+
+.employees-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 26px;
+    padding: 20px;
+}
+
+.employee-card {
+    flex: 1 1 calc(25% - 26px); /* Adjusting the card width based on container's width */
+    padding: 20px; /* Adding some padding for spacing inside the card */
+    background-color: transparent;
+    border: 2px solid #9147ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    border-radius: 30px;
+    box-sizing: border-box; /* Ensuring padding and border are included in the element's total width and height */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.employee-card h2,
+.employee-card h4 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.employee-card:hover {
+    background: linear-gradient(135deg, #9147ff, #4e1d9e);
+}
+
+.employee-card img {
+    width: 80%; 
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 1200px) {
+    .employee-card {
+        flex: 1 1 calc(33.33% - 26px); 
+    }
+}
+
+@media (max-width: 900px) {
+    .employee-card {
+        flex: 1 1 calc(50% - 26px);
+    }
+}
+
+@media (max-width: 600px) {
+    .employee-card {
+        flex: 1 1 calc(100% - 26px); 
+    }
 }
