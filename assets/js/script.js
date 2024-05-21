@@ -34,11 +34,6 @@ const tl = gsap.timeline({
     },
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    gsap.to(".page1 h1", {duration: 1, y: 10, opacity: 1, ease: "bounce.out"});
-    gsap.to(".page1 h2", {duration: 1, y: 10, opacity: 1, ease: "bounce.out", delay: 0.5});
-});
-
 tl.to(
     ".page1 h1",
     {
@@ -96,3 +91,8 @@ document.getElementById("chat-input").addEventListener("keypress", function (eve
         document.getElementById("send-button").click();
     }
 });
+
+function removeConnection(link) {
+    const connection = link.closest(".connection");
+    connection.remove();
+}

@@ -180,18 +180,38 @@ nav img {
 .left-fixed-div h3 {
     color: white;
     margin: 10px;
-    font-size: 1.2vw;
+    font-size: 0.9vw;
     text-align: center;
 }
 
 .left-fixed-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-top: 4vh;
     background-color: #18181b;
     width: 100%;
     height: 100%;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.left-fixed-container div {
+    color: white;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #29292d;
+}
+
+.left-fixed-container h2 {
+    font-size: 0.5rem;
+    margin-bottom: 5px;
+}
+
+.left-fixed-container h4 {
+    font-weight: normal;
+    font-size: 14px;
+    opacity: 0.7;
 }
 
 /* main */
@@ -214,7 +234,9 @@ nav img {
     font-family: PP mori;
     margin-left: 22vw;
     color: #9147ff;
-    text-shadow: 2px 2px 4px rgba(229, 14, 237, 0.4), /* First shadow */ 4px 4px 8px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    text-shadow: 2px 2px 8px rgba(229, 14, 237, 0.8), 4px 4px 12px rgba(0, 0, 0, 0.6);
 }
 
 .page1 h2 {
@@ -223,11 +245,6 @@ nav img {
     font-family: PP mori;
     margin-left: 42vw;
     color: #9147ff;
-    text-shadow: 2px 2px 4px rgba(229, 14, 237, 0.4), /* First shadow */ 4px 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.page1 h1:hover,
-.page1 h2:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
     text-shadow: 2px 2px 8px rgba(229, 14, 237, 0.8), 4px 4px 12px rgba(0, 0, 0, 0.6);
@@ -1084,7 +1101,7 @@ ul {
     justify-content: center;
     align-items: center;
     color: white;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .page3-container {
@@ -1096,46 +1113,75 @@ ul {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    background-color: #2a2a2a; 
+    background-color: #2a2a2a;
 }
 
-.cards-wrapper {
+.page3 {
+    padding: 20px;
     display: flex;
-    gap: 1rem;
-    padding: 1rem;
-    scroll-snap-type: x mandatory; /* Snap to each card */
-    overflow-x: scroll;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.card {
-    width: 18rem;
-    border: none;
-    border-radius: 15px;
-    background: linear-gradient(145deg, #6441a5, #9147ff); /* Twitch gradient */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
-    scroll-snap-align: start; /* Align cards to start of scroll */
+.connections-page1 {
+    width: 100%;
+    height: 200vh;
+    margin-bottom: 10vw;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
 }
 
-.card:hover {
-    transform: scale(1.05);
+.connections-container {
+    margin: 18vh 0;
+    border-radius: 3vw;
+    width: 60vw;
+    height: 140vw;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #18181b;
+    color: white;
+    border: 2px solid #6441a5;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
-.card-img-top {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+.connection {
+    width: 90%;
+    height: 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw;
 }
 
-.card-body {
+.connection img {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.connection-dropdown-content {
+    background-color: #f9f9f9;
+    min-width: 160px;
+    padding: 1vw 2vw;
+    border-radius: 30px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: background-color ease-in-out 2s color ease-in-out 2s;
     text-align: center;
 }
 
-.btn-primary {
-    background-color: #9147ff; 
-    border-color: #9147ff;
+.connection-dropdown-content {
+    text-decoration: none;
+    color: black;
+    font-size: 1vw;
 }
 
-.btn-primary:hover {
-    background-color: #772ce8; 
-    border-color: #772ce8;
+.connection-dropdown-content:hover {
+    background-color: red;
+    color: white;
 }
