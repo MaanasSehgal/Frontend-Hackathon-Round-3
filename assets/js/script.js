@@ -113,3 +113,13 @@ function removeConnection(link) {
     const connection = link.closest(".connection");
     connection.remove();
 }
+
+function addConnection(link) {
+    const connection = link.closest(".connection");
+    const clonedConnection = connection.cloneNode(true); // Clone the connection element
+    const addButton = clonedConnection.querySelector("a"); // Change the button text
+    addButton.textContent = "Remove Connection"; // Change button text to "Remove Connection"
+    addButton.setAttribute("onclick", "removeConnection(this)"); // Change the onclick event to removeConnection
+    const connectionsContainer = document.querySelector(".connection-append"); // Get the container for connections
+    connectionsContainer.prepend(clonedConnection); // Add the cloned connection to the top of the container
+}
