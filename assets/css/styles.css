@@ -591,10 +591,17 @@ ul {
     cursor: pointer;
 }
 
+.notification-page1 {
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+}
+
 .notifications-container {
     margin: 18vh auto;
     border-radius: 1vw;
-    width: 60vw;
+    width: 70vw;
     background-color: #1e1e20;
     display: flex;
     flex-direction: column;
@@ -602,6 +609,7 @@ ul {
     gap: 1vw;
     color: white;
     padding: 2vw;
+    height: 80vw;
 }
 
 .notification {
@@ -764,10 +772,9 @@ ul {
     border-radius: 5px;
     border: none;
     margin-right: 1rem;
-    width: 100%; 
-    max-width: calc(100% - 80px); 
+    width: 100%;
+    max-width: calc(100% - 80px);
 }
-
 
 .chat-input button {
     padding: 0.5rem 1rem;
@@ -777,7 +784,7 @@ ul {
     color: white;
     cursor: pointer;
     flex-shrink: 0;
-    width: 80px; 
+    width: 80px;
 }
 
 .chat-input button:hover {
@@ -823,4 +830,312 @@ ul {
     .chat-input input {
         width: calc(100% - 150px);
     }
+}
+
+.accept-button {
+    margin-left: 2vw;
+    background: linear-gradient(135deg, #ff6b6b, #ffa8a8);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.accept-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.page2 {
+    width: 100%;
+    height: 480vh;
+    display: flex;
+    justify-content: center;
+    background-color: #1e1e20;
+    color: white;
+}
+
+.page2-container {
+    width: 80%;
+    height: 90%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 16vw;
+}
+
+.start-a-post {
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    border: 1px solid #9147ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.start-a-post-upper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.start-a-post-upper img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.start-a-post-upper input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    background-color: #f3f3f3;
+    outline: none;
+}
+
+.start-a-post-lower {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.start-a-post-lower h2 {
+    font-size: 14px;
+    color: #0073b1;
+    cursor: pointer;
+    margin: 0;
+}
+
+.start-a-post-lower h2:hover {
+    text-decoration: underline;
+}
+
+.start-a-post input {
+    background-color: transparent;
+    color: white;
+}
+.posts {
+    margin-top: 10px;
+    width: 80%;
+    padding: 1vw;
+    border: 1px solid #9147ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+}
+
+/* posts */
+.posts {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+.post {
+    background-color: #18181b;
+    border: 1px solid #9147ff;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-upper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.post-upper img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.post-user-details {
+    flex-grow: 1;
+}
+
+.post-user-details h2,
+.post-user-details h3 {
+    margin: 0;
+}
+
+.post-user-details h2 {
+    font-size: 18px;
+    color: #9147ff;
+}
+
+.post-user-details h3 {
+    font-size: 14px;
+    color: #adadb8;
+}
+
+.post-upper h2 {
+    font-size: 14px;
+    color: #9147ff;
+    cursor: pointer;
+}
+
+.post-upper h2:hover {
+    text-decoration: underline;
+}
+
+.post-lower p {
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.post-lower img {
+    width: 60%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.post-lower-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.post-lower-icons span {
+    font-size: 20px;
+    cursor: pointer;
+    color: #adadb8;
+}
+
+.post-lower-icons span:hover {
+    color: #9147ff;
+}
+
+.add-a-comment {
+    display: flex;
+    align-items: center;
+}
+
+.add-a-comment img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.add-a-comment input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #3a3a3d;
+    border-radius: 20px;
+    background-color: #252526;
+    color: #fff;
+    outline: none;
+}
+
+.add-a-comment input::placeholder {
+    color: #adadb8;
+}
+
+.start-a-post-lower h2 {
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+}
+
+.blue {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.blue:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .left-fixed-div {
+        display: none;
+    }
+
+    .page2-container {
+        margin-left: 3vw;
+    }
+}
+
+.page3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden; 
+}
+
+.page3-container {
+    margin-left: 16vw;
+    width: 70%;
+    height: 90%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #2a2a2a; 
+}
+
+.cards-wrapper {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    scroll-snap-type: x mandatory; /* Snap to each card */
+    overflow-x: scroll;
+}
+
+.card {
+    width: 18rem;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #6441a5, #9147ff); /* Twitch gradient */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    scroll-snap-align: start; /* Align cards to start of scroll */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #9147ff; 
+    border-color: #9147ff;
+}
+
+.btn-primary:hover {
+    background-color: #772ce8; 
+    border-color: #772ce8;
 }
