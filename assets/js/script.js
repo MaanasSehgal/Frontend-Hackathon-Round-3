@@ -26,9 +26,8 @@ init();
 
 const tl2 = gsap.timeline({
     scrollTrigger: {
-        trigger: ".page1 h1",
+        trigger: ".page1",
         scroller: ".main",
-        markers: true,
         start: "top -70%",
         end: "top -180",
         scrub: 10,

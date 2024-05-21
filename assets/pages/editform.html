@@ -34,7 +34,7 @@
                     <img src="../../public/girl.png" alt="" />
                     <div class="dropdown-content">
                         <a href="profile.html">Profile</a>
-                        <a href="#">Settings</a>
+                        <a href="#">Edit Profile</a>
                         <a href="#">Logout</a>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
         <div class="main">
             <div class="profile-page1">
                 <div class="editform-container">
-                    <h1 class="poetsen-one-regular">Edit Form</h1>
+                    <h1 class="poetsen-one-regular">Edit your profile</h1>
                     <form class="edit-profile-form">
                         <div class="mb-3">
                             <label for="name" class="form-label">Name</label>
@@ -56,16 +56,14 @@
                         </div>
                         <div class="mb-3">
                             <label for="summary" class="form-label">Summary</label>
-                            <textarea
-                                class="form-control"
-                                id="summary"
-                                rows="4"
-                                value="Hi, I'm Amelia Johnson, a marketing enthusiast known for driving growth and captivating audiences..."
-                            ></textarea>
+                            <textarea class="form-control" id="summary" rows="4">
+Hi, I'm Amelia Johnson, a marketing enthusiast known for driving growth and captivating audiences...
+                        </textarea
+                            >
                         </div>
                         <div class="mb-3">
                             <label for="experience" class="form-label">Experience</label>
-                            <textarea class="form-control" id="experience" rows="4" value="Marketing Manager at Work with Warnie (2018 - Present)..."></textarea>
+                            <textarea class="form-control" id="experience" rows="4">Marketing Manager at Work with Warnie (2018 - Present)...</textarea>
                         </div>
                         <div class="mb-3">
                             <label for="education" class="form-label">Education</label>
@@ -73,8 +71,10 @@
                         </div>
                         <div class="mb-3">
                             <label for="skills" class="form-label">Skills</label>
-                            <input type="text" class="form-control" id="skills" placeholder="Strategic Planning, Data Analysis, Content Marketing, Social Media Management" />
+                            <input type="text" class="form-control" id="skills" value="Strategic Planning, Data Analysis, Content Marketing, Social Media Management" />
+                            <h6 style="color:#ff0000">*separate all the skills by a comma</h6>
                         </div>
+                        <br />
                         <button type="submit" class="btn btn-primary">Save Changes</button>
                     </form>
                 </div>

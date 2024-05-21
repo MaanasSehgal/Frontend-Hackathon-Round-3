@@ -147,23 +147,31 @@ nav img {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: #9146ff; /* Twitch purple color */
     min-width: 150px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
     right: 0;
     top: 100%;
+    border-radius: 4px; /* Rounded corners */
 }
 
+/* Hover effect */
+.dropdown-content:hover {
+    background-color: #7d33e8; /* Darker purple on hover */
+}
+
+/* Links inside the dropdown */
 .dropdown-content a {
-    color: black;
-    padding: 10px 15px;
+    color: #fff; /* White text */
+    padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
+/* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #7d33e8; /* Darker purple on hover */
 }
 
 @media (max-width: 768px) {
@@ -241,7 +249,7 @@ nav img {
 }
 
 .page1 {
-    min-height: 120vh;
+    min-height: 100vh;
     width: 100%;
     position: relative;
     z-index: 9;
@@ -500,6 +508,7 @@ ul {
     flex-direction: column;
     gap: 3vw;
     padding: 6rem;
+    margin-bottom: 10vh;
 }
 
 .editform-container input {
@@ -678,7 +687,7 @@ ul {
 
 /* messages */
 
-.messages-page1 {
+/* .messages-page1 {
     width: 100%;
     height: 76vh;
     margin-top: 15vh;
@@ -698,7 +707,7 @@ ul {
     width: 75vw;
     height: 100%;
     border: 1px solid var(--purple);
-}
+} */
 
 .person {
     display: flex;
