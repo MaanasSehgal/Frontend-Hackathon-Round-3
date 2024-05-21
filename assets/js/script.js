@@ -56,11 +56,22 @@ profileDropdown.addEventListener("click", function (e) {
 });
 
 document.getElementById("send-button").addEventListener("click", function () {
-    const chatInput = document.getElementById("chat-input");
+    sendMessage("chat-input", "chat-messages");
+});
+
+document.getElementById("chat-input").addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        sendMessage("chat-input", "chat-messages");
+    }
+});
+
+function sendMessage(inputId, messagesId) {
+    const chatInput = document.getElementById(inputId);
     const message = chatInput.value;
 
     if (message.trim() !== "") {
-        const chatMessages = document.getElementById("chat-messages");
+        const chatMessages = document.getElementById(messagesId);
 
         const newMessage = document.createElement("div");
         newMessage.classList.add("message", "right");
@@ -71,27 +82,15 @@ document.getElementById("send-button").addEventListener("click", function () {
 
         chatInput.value = "";
     }
-});
-
-document.getElementById("chat-input").addEventListener("keypress", function (event) {
-    if (event.key === "Enter") {
-        event.preventDefault();
-        document.getElementById("send-button").click();
-    }
-});
-
-function removeConnection(link) {
-    const connection = link.closest(".connection");
-    connection.remove();
 }
 
-function addConnection(link) {
-    const connection = link.closest(".connection");
-    const clonedConnection = connection.cloneNode(true);
-    const addButton = clonedConnection.querySelector("a");
-    addButton.textContent = "Remove Connection";
-    addButton.setAttribute("onclick", "removeConnection(this)");
-    const connectionsContainer = document.querySelector(".connection-append");
-    connectionsContainer.prepend(clonedConnection);
-}
+document.addEventListener("DOMContentLoaded", function () {
+    const leftPersons = document.querySelectorAll(".person");
+    const messagesRightFixed = document.getElementById("messages-right-fixed");
 
+    leftPersons.forEach((person) => {
+        person.addEventListener("click", function () {
+            messagesRightFixed.classList.toggle("full-width");
+        });
+    });
+});

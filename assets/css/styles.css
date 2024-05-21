@@ -685,16 +685,37 @@ ul {
     line-height: 1.2;
 }
 
-/* messages */
-
-/* .messages-page1 {
-    width: 100%;
-    height: 76vh;
+.messages-page1 {
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    min-height: 100vh;
     margin-top: 15vh;
     display: flex;
     background-color: #1e1e20;
     color: white;
     justify-content: center;
+}
+
+.messages-left-fixed {
+    width: 25%;
+    height: auto;
+    min-height: 100vh;
+    border: 1px solid var(--purple);
+}
+
+.messages-right-fixed {
+    width: 75vw;
+    height: auto;
+    min-height: 100vh;
+    border: 1px solid var(--purple);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.messages-right-fixed.full-width {
+    width: 100%;
 }
 
 .messages-left-fixed {
@@ -707,7 +728,7 @@ ul {
     width: 75vw;
     height: 100%;
     border: 1px solid var(--purple);
-} */
+}
 
 .person {
     display: flex;
@@ -742,11 +763,14 @@ ul {
 
 .chat-input {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: #1e1e20;
-    padding: 2rem;
-    width: 10vw;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%; 
+    left: 0;
+    z-index: 999; 
 }
 
 .message {
@@ -803,7 +827,7 @@ ul {
 .chat-messages {
     padding: 1rem;
     overflow-y: auto;
-    max-height: calc(100vh - 200px); /* Adjusted max height */
+    max-height: calc(100vh - 200px);
 }
 
 .chat-input {
@@ -811,9 +835,9 @@ ul {
     align-items: center;
     background-color: #1e1e20;
     padding: 1rem;
-    position: sticky; /* Changed to sticky position */
-    bottom: 0; /* Positioned at the bottom */
-    width: calc(100% - 2rem); /* Adjusted width */
+    position: sticky;
+    bottom: 0;
+    width: calc(100% - 2rem);
 }
 
 .chat-input input {
@@ -879,6 +903,41 @@ ul {
 
     .chat-input input {
         width: calc(100% - 150px);
+    }
+}
+
+.messages-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.messages-left-fixed {
+    flex: 1;
+    border: 1px solid var(--purple);
+    overflow-y: auto;
+}
+
+.messages-right-fixed {
+    flex: 3;
+    border: 1px solid var(--purple);
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .messages-page {
+        flex-direction: row;
+    }
+
+    .messages-left-fixed {
+        flex: 1;
+        max-width: 25%;
+    }
+
+    .messages-right-fixed {
+        flex: 3;
+        max-width: 75%;
     }
 }
 
