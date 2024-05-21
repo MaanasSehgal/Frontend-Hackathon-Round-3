@@ -30,7 +30,7 @@ const tl = gsap.timeline({
         scroller: ".main",
         start: "top 27%",
         end: "top -50",
-        scrub: 3,
+        scrub: 0.1,
     },
 });
 
@@ -38,6 +38,7 @@ tl.to(
     ".page1 h1",
     {
         x: -50,
+        duration: 0.5,
     },
     "same-time-animation"
 );
@@ -45,10 +46,26 @@ tl.to(
 tl.to(
     ".page1 h2",
     {
+        duration: 0.5,
         x: 50,
     },
     "same-time-animation"
 );
+
+const tl2 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".page1 h1",
+        scroller: ".main",
+        markers: true,
+        start: "top -70%",
+        end: "top -180",
+        scrub: 10,
+    },
+});
+
+tl2.to(".main", {
+    backgroundColor: "#18181b",
+});
 
 document.addEventListener("click", function (e) {
     const dropdown = document.querySelector(".profile-dropdown");
