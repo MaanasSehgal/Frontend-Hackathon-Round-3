@@ -24,34 +24,6 @@ function init() {
 
 init();
 
-const tl = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".page1 h1",
-        scroller: ".main",
-        start: "top 27%",
-        end: "top -50",
-        scrub: 0.1,
-    },
-});
-
-tl.to(
-    ".page1 h1",
-    {
-        x: -50,
-        duration: 0.5,
-    },
-    "same-time-animation"
-);
-
-tl.to(
-    ".page1 h2",
-    {
-        duration: 0.5,
-        x: 50,
-    },
-    "same-time-animation"
-);
-
 const tl2 = gsap.timeline({
     scrollTrigger: {
         trigger: ".page1 h1",
@@ -96,7 +68,7 @@ document.getElementById("send-button").addEventListener("click", function () {
         newMessage.innerHTML = `<p>${message}</p>`;
 
         chatMessages.appendChild(newMessage);
-        chatMessages.scrollTop = chatMessages.scrollHeight; // Scroll to the bottom
+        chatMessages.scrollTop = chatMessages.scrollHeight;
 
         chatInput.value = "";
     }
@@ -116,10 +88,11 @@ function removeConnection(link) {
 
 function addConnection(link) {
     const connection = link.closest(".connection");
-    const clonedConnection = connection.cloneNode(true); 
+    const clonedConnection = connection.cloneNode(true);
     const addButton = clonedConnection.querySelector("a");
-    addButton.textContent = "Remove Connection"; 
-    addButton.setAttribute("onclick", "removeConnection(this)"); 
-    const connectionsContainer = document.querySelector(".connection-append"); 
-    connectionsContainer.prepend(clonedConnection); 
+    addButton.textContent = "Remove Connection";
+    addButton.setAttribute("onclick", "removeConnection(this)");
+    const connectionsContainer = document.querySelector(".connection-append");
+    connectionsContainer.prepend(clonedConnection);
 }
+
