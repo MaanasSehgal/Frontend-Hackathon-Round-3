@@ -1,5 +1,6 @@
 :root {
     --purple: rgb(189, 146, 252);
+    --font-family: "Roobert", Arial, sans-serif;
 }
 
 @font-face {
@@ -7,10 +8,6 @@
     src: url("../../assets/fonts/RoobertRegular.ttf");
     font-weight: normal;
     font-style: normal;
-}
-
-:root {
-    --font-family: "Roobert", Arial, sans-serif;
 }
 
 * {
@@ -768,9 +765,9 @@ ul {
     padding: 1rem;
     position: fixed;
     bottom: 0;
-    width: 100%; 
+    width: 100%;
     left: 0;
-    z-index: 999; 
+    z-index: 999;
 }
 
 .message {
@@ -999,11 +996,13 @@ ul {
     padding: 10px 0;
 }
 
-.start-a-post-upper img {
+.start-a-post-upper img,
+.start-a-post-upper iframe {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     margin-right: 10px;
+    margin-bottom: 20px;
 }
 
 .start-a-post-upper input {
@@ -1127,6 +1126,7 @@ ul {
 }
 
 .post-lower-icons {
+    width: 10vw;
     display: flex;
     justify-content: space-around;
     margin-bottom: 15px;
@@ -1712,4 +1712,23 @@ ul {
 
 .swiper-pagination {
     display: none;
+}
+
+.page4 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10vw;
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex: 2;
+}
+
+.page4-container {
+    width: 80%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 16vw;
 }
