@@ -19,23 +19,26 @@
     <body>
         <nav class="navbar">
             <div class="navbar-left">
-                <a href="#" class="logo"><h1>Linkedin</h1></a>
+                <a href="/Frontend-Hackathon-Round-3" class="logo"><h1>Linkedin</h1></a>
             </div>
             <div class="navbar-center">
                 <input type="text" placeholder="Search posts" class="search-input" /><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
             </div>
             <div class="navbar-right">
-                <a href="/" class="nav-item">Home</a>
-                <a href="./connections.html" class="nav-item">My Network</a>
-                <a href="./jobs.html" class="nav-item">Jobs</a>
-                <a href="./messages.html" class="nav-item">Messages</a>
-                <a href="./notifications.html" class="nav-item"><i class="fa-regular fa-bell"></i></a>
+                <a href="/Frontend-Hackathon-Round-3" class="nav-item hid">Home</a>
+                <a href="./connections.html" class="nav-item hid">My Network</a>
+                <a href="./jobs.html" class="nav-item hid">Jobs</a>
+                <a href="./messages.html" class="nav-item hid">Messages</a>
+                <a href="./notifications.html" class="nav-item hid">Notifications</a>
                 <div class="nav-item profile-dropdown">
-                    <img src="../../public/girl.png" alt="" />
+                    <img src="../../public/girl.png" alt="Profile" />
                     <div class="dropdown-content">
+                        <a class="hid" href="/Frontend">Home</a>
                         <a href="./profile.html">Profile</a>
                         <a href="./editform.html">Edit Profile</a>
-                        <a href="#">Logout</a>
+                        <a class="hid" href="./jobs.html">Jobs</a>
+                        <a class="hid" href="./messages.html">Messages</a>
+                        <a class="hid" href="./notifications.html">Notifications<i class="fa-regular fa-bell"></i></a>
                     </div>
                 </div>
             </div>
