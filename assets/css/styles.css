@@ -1202,6 +1202,11 @@ ul {
         width: 90%;
     }
 
+     .page4-container {
+        margin-left: 0w;
+        width: 90%;
+    }
+
     .footer-section {
         margin-left: 0vw;
     }
@@ -1821,4 +1826,3 @@ ul {
 .post-user-details h3 {
     font-size: 1.3vw;
 }
-

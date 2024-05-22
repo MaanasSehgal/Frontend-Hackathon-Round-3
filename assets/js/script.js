@@ -94,3 +94,18 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+function removeConnection(link) {
+    const connection = link.closest(".connection");
+    connection.remove();
+}
+
+function addConnection(link) {
+    const connection = link.closest(".connection");
+    const clonedConnection = connection.cloneNode(true); 
+    const addButton = clonedConnection.querySelector("a"); 
+    addButton.textContent = "Remove Connection"; 
+    addButton.setAttribute("onclick", "removeConnection(this)"); 
+    const connectionsContainer = document.querySelector(".connections-container"); 
+    connectionsContainer.prepend(clonedConnection); 
+}
