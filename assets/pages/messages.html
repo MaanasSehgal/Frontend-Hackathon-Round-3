@@ -24,111 +24,11 @@
         <link rel="stylesheet" href="../css/styles.css" />
 
         <style>
-            .profile-dropdown img {
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-            }
-
-            .profile-dropdown .dropdown-content {
-                display: none;
-                position: absolute;
-                background-color: #2c2c34;
-                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-                z-index: 1;
-            }
-
-            .profile-dropdown:hover .dropdown-content {
-                display: block;
-            }
-
-            .profile-dropdown .dropdown-content a {
-                color: white;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-            }
-
-            .profile-dropdown .dropdown-content a:hover {
-                background-color: #3c3cb7;
-            }
-
-            .messages-page1 {
-                width: 80%;
-                margin: 0 auto;
-                min-height: 100vh;
-                margin-top: 15vh;
-                display: flex;
-                background-color: #1e1e20;
-                color: white;
-                justify-content: center;
-            }
-
-            .messages-left-fixed {
-                width: 25%;
-                min-height: 100vh;
-                border: 1px solid var(--purple);
-                overflow-y: auto;
-            }
-
-            .messages-right-fixed {
-                overflow-y: auto;
-                width: 75%;
-                min-height: 100vh;
-                border: 1px solid var(--purple);
-                display: flex;
-                flex-direction: column;
-                background-color: #9f1adc;
-            }
-
-            .person {
-                display: flex;
-                align-items: center;
-                padding: 1vw;
-                border: 1px solid var(--purple);
-            }
-
-            .person:hover {
-                background-color: var(--purple);
-                color: white;
-                cursor: pointer;
-            }
-
-            .person h3 {
-                margin: 0;
-                font-size: 1.4rem;
-                line-height: 1.2;
-            }
-
-            .person img {
-                border-radius: 50%;
-                width: 5vw;
-                height: 5vw;
-                object-fit: cover;
-                margin-right: 2vw;
-            }
-
             .chat-messages {
                 padding: 1rem;
-                overflow-y: auto;
+                height: auto;
                 max-height: calc(100vh - 100px);
-                background-color: #f0f0f0;
                 flex: 1;
-            }
-
-            .message {
-                padding: 15px;
-                margin: 10px;
-                border-radius: 15px;
-            }
-
-            .message.left {
-                color: black;
-            }
-
-            .message.right {
-                background-color: #9f1adc;
-                color: white;
             }
 
             .chat-input {
@@ -136,41 +36,34 @@
                 align-items: center;
                 padding: 1rem;
                 position: fixed;
-                background-color: blue;
                 bottom: 15vh;
                 margin-left: 30vw;
                 width: 60%;
-            }
-
-            .chat-input input {
-                flex: 1;
-                padding: 1rem;
-                border-radius: 5px;
-                border: none;
-                margin-right: 1rem;
             }
 
             .chat-input button {
                 padding: 0.5rem 1rem;
                 border: none;
                 border-radius: 5px;
-                background-color: #007bff;
+                background-color: #9147ff;
                 color: white;
                 cursor: pointer;
             }
 
             .chat-input button:hover {
-                background-color: #0056b3;
+                background-color: #6c2ccc;
             }
 
             @media (max-width: 767px) {
                 .messages-page1 {
-                    flex-direction: column;
                     width: 100%;
                     margin-top: 0;
                 }
 
-                .messages-left-fixed,
+                .messages-left-fixed {
+                    display: none;
+                }
+
                 .messages-right-fixed {
                     width: 100%;
                     min-height: auto;
@@ -178,18 +71,11 @@
 
                 .chat-input {
                     width: 100%;
-                }
-
-                .chat-input input {
-                    width: calc(100% - 80px);
+                    margin-right: 8rem;
                 }
             }
 
             @media (min-width: 768px) {
-                .messages-page1 {
-                    flex-direction: row;
-                }
-
                 .messages-left-fixed {
                     width: 25%;
                 }
@@ -245,7 +131,7 @@
                 </div>
                 <div class="messages-right-fixed" id="messages-right-fixed">
                     <div class="chat-messages" id="chat-messages">
-                        <i class="fa-solid fa-circle-chevron-left"></i>
+                        <!-- <i class="fa-solid fa-circle-chevron-left"></i> -->
                         <div class="message left">
                             <p>Hello! How are you?</p>
                         </div>

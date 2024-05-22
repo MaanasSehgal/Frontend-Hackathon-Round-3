@@ -1298,6 +1298,12 @@ ul {
     align-items: center;
 }
 
+@media (max-width: 768px) {
+    .card-upper img {
+        display: none;
+    }
+}
+
 .card-lower h2 {
     margin-top: 10px;
     font-size: 1.5rem;
@@ -1363,6 +1369,12 @@ ul {
 
     .mySwiper {
         margin-top: 10vw;
+    }
+}
+
+@media (max-width: 300px) {
+    .mySwiper {
+        margin-top: 20vw;
     }
 }
 
@@ -1791,3 +1803,22 @@ ul {
         display: none;
     }
 }
+
+@media (max-width: 768px) {
+    .companies-page1-container {
+        width: 80vw;
+    }
+    .companies-page1-container img {
+        width: 20vw;
+        height: 20vw;
+    }
+}
+
+.post-user-details h2 {
+    font-size: 1.7vw;
+}
+
+.post-user-details h3 {
+    font-size: 1.3vw;
+}
+

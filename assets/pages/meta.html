@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Meta</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -15,6 +15,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="../css/styles.css" />
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     </head>
     <body>
         <nav class="navbar">
@@ -44,55 +45,97 @@
         <div class="main">
             <div class="profile-page1">
                 <div class="profile-page1-container">
-                    <img src="../../public/girl.png" alt="girl" />
-                    <h1 class="poetsen-one-regular">Amelia Johnson</h1>
-                    <div class="profile-left-div">
-                        <div class="profile-headline">Passionate Marketing Professional | Driving Organic Growth & Engaging Audiences</div>
+                    <img src="https://cdn.pixabay.com/photo/2021/12/14/22/29/meta-6871457_640.png" alt="" />
+                    <h1>Meta</h1>
+                    <h4>Software Development Menlo Park, California 85M followers 58K+ employees</h4>
 
-                        <br />
-                        <h2>Summary</h2>
-                        <h4>
-                            Hi, I'm Amelia Johnson, a marketing enthusiast known for driving growth and captivating audiences. With a background in crafting data-driven strategies, I've contributed to
-                            the success of various brands through effective campaigns. My experience spans roles in diverse industries, where I've honed my skills in strategic planning and campaign
-                            execution.
+                    <div class="company-page-left">
+                        <div class="company-follow-div">
+                            <button class="company-follow-btn"><i class="fa-solid fa-check"></i>Follow</button>
+                            <button class="company-follow-btn">Learn more!<i class="fa-solid fa-download"></i></button>
+                        </div>
+                        <p>
+                            Meta's mission is to give people the power to build community and bring the world closer together. We believe technology can and should be a force for good and that
+                            meaningful innovation contributes to a brighter world in the future and today.
                             <br /><br />
-                            Excited to apply expertise, drive impactful initiatives, and create impactful campaigns through collaboration. Let's connect!
-                        </h4>
+                            Our culture doesn't just encourage curiosity; it embraces it. Each day we make progress together by showing up as our authentic selves. We show up with a learn-it-all
+                            mentality.
+                            <br /><br />
+                            We show up cheering on others, knowing their success doesn't diminish our own. We show up every day open to learning our own biases, changing our behavior, and inviting in
+                            differences. Because impact matters.
+                            <br /><br />
+                            Meta operates in over 90 countries and is made up of more than 58,000 passionate employees worldwide.
+                        </p>
 
+                        <br /><br />
+
+                        <div class="swiper-pagination"></div>
+                        <h1>Employees working here:</h1>
+                        <div class="employees-card-container">
+                            <div class="employee-card">
+                                <img
+                                    src="data:image/jpeg;base64,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"
+                                    alt=""
+                                />
+                                <h2>Anupam Mittal</h2>
+                                <h4>Angel Investor in Meta</h4>
+                            </div>
+                            <div class="employee-card">
+                                <img
+                                    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFRgVFhUZGRgYHBgaGBwaGBgYGhgaGBgZGRgYGBocIS4lHB4rJBoYJjomKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHxISHjQrJCs0MTQxMTQ0NDQ0NDQ0NDQ0NDQxNDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIALcBEwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAADAgQFBgcAAQj/xABFEAACAQIDBQQHBgMGBQUBAAABAgADEQQSIQUGMUFRImFxgQcTMpGhsdEUQlJiksFygvAVFjNDouEjU4Oy0iU1VHPxF//EABkBAAMBAQEAAAAAAAAAAAAAAAABAwIEBf/EACQRAAICAgIDAAEFAAAAAAAAAAABAhEDIRIxE0FRMgRhcYGR/9oADAMBAAIRAxEAPwCyIIZINBCqIhhVhFiFhFgARRFrErFrGAtRFiJWKEBCxCARAhBAD0RQngihADy06ezwxiOMjts40UqbMTyMkDKfvbTeoyINELC5jQMgdnYD7Qz1qguGOkkqGwaV/ZPvkjToBFCLwAtHeGSIBodnBEso7x3GJoi475N+ruJC7dr/AGdCQe2+ijoesb2JDykh6R/RYSl4VMUwBNdtYbFB6NNqj13sOQOpJ0AHnFaNVZcq2KRFLuwVRxJ0Amd7y74etJREIQaXOjMOuU8BK7tTa1SpfO7FRwF/ZJ/rx4yAq13uR7Q5X0I6j+vjJuTfRVRS7LUm9jplVVUryv2T4cf3k3s7e1HYIUKsxCjUWuTwN5ndOqXQgHhxHh+8JSdHOXVGtwvoSBy008tJlNobSZuOGkhTWZTu5vY9FkSq2dGsATbMutj468prGHYMAQbggEHqDKqVknGjzElcuU/e0EiaAZXZD4/Qx1tRLkH8MTg0vdzxb5chBCYsGdaKVYoLABKiKKz1VhMsYDfLOhsk6IZEqIRI0oYtHAKsGB0BGov0PQ90erEnYC1EKog1hVgARYtYhYtYALEWIkT0RiCLCiCWFEAFCRO0N4qNF8jtrHm0cWKVNnPITN9n0vtNdqji6g31+AjQi6f3tw/Ux5g9s06mqnSQKYGnf2B7oYUAnsiwMYFmLSP2phg6987A4i4sTqPlDmqp5iCEyFoEkWPEaGO6KxjtJK6m9EI1+TaSPFXaXKlS95+sKCy3INMx0AlHxFY4rEF/uJonf3+cltq4quMMiPbO+jZAQqjpE7OwYRQLQY0GpUraSr774g5kpXIVQHPIEsSB7rH3y6Ukld3m2R9pxeFpg2Vg5cjktM3PxNvOTl0UhtlK2JsKvinIp2yD2ma9rkk2Fv61jPbuzXwzmm41Go6EdVPMd03PZezaeHTJTQKNSepJ4knnGO2dmUq4tVQMBwuOHhIu1s6FT0fOzVyGvb/eKWpdrA/wHmOnx/eajjtzMPmuoIA5aSobc3d9W2ZPZ593fGsiboTxSStDPC1QwLkgFTextcEWLDU63Ftf3mz7k4z1mGS5uV7PlxHwImJbLIBZez963Am9iLs3kLAddZqW4F6eGJuLu17EjkACR1F5RdkX+LLVj2zMEHnChbCwjehcXJ9o8Y6RZQmcFilSLAilWIDxUnuWEVYrLGIBlnkPlnRAZDT2Li0rutJiUHFgVUG4uuYHnHP9t4nDMFrL7yMrADkRz1HOVzbm81ZqrGk7U1zA2BtdlAUk93Z4SSpbWd1SpVRK1N6rM6jUowQrkPkFNuc43FJWm0SW+mWTZO96u2V0y944DpcfvLdScMAQbgi4PUGZ5tbZ9MijUwaFrhwQl2YahlzA9GNrSZ2NvM5R0qoVrIDlGXKGa11Q9GNx4ykclab/ALHGdOmW9YQTPNm4XaGLPrmrmihJyg3GnDRBy8Za9mJXoAjEVUdOT+ww7mHAibU2/WjSm36ZNieiAoYhHF1N/h84aUTT6KBEMMI3UwwjEVjfSm7pZfZHERvsjCqlJcut9Se+WPaFHOpErmAujmmfZOq93UR+heyRp044NO4i0pweMqZVtzMaBkXtLFimhI4+yveTIvDbOqsoY1G114mIqXr1go9hPiZZKaaAQbBIiU2RUP8Amt7zCf2LV/5z/qMnKaQ6pEmDEBPWUwre2trnvHBo1QXHeNDHrdg5uA5300kdjto4dGzetTX2gDm89IMEOkWHp4ZWctwKqUUjiMxzOe65C+6QNTejDJ94nwA/cyb2FtFcQhqoCFY2F7a5dCfeDJzXRbG+yt7RxmJoVLpV6/8ADqIxVgDxDr7PjJuhtAugd0yEjtAm4Hg3AjvkhXwCO12HD4yv771bU1pKbZjy6c5CWlZ0R26A7QxSNcI4v0BEqO36hCNpyMY4/YqoSfVg8SCGdXBHAAjQ+ca01dUbPmCFSbOcxFtdDM0m7KcmlVEFsXCtUcKvM+++hv8AGbXsvYioiqTcgAE/OZLu7U+zMa7Xvbs6AqLnib8Ta/DpLlht/HH4fdOqO9o4Z2tMv6LlOU8R8RyMcoJQf775rFlTTpcfvH1HfpODJ7m/2mzBcwItVlcwm+OGfViUHU2I+GvwlkouGAZTcEAgjmDwMAFqIvLOQQgEBA8s6NqmINzadFYzCtubuuuJyJYioXdNbWF7sG6WvGtfD1sOcrajSzKb5WF7XtxGvOTm3tqOHRyEN1ZcyMzKFa6kMwHZ1IPdklfOz6pV3XtBPbytmuCL5tNSvfOSSbeuiEkk9WT27O3hh3L1LhH0NgSL9Vt00k3vFtLDYmkmSuEDMXclSLWFgSAMxe+Ww+kqWxsFiK6U0yo1N2fISwFiBd721+6IzxmFCOyg6qxU9zKbGJ3FV6Myk4qn0WLZRw+VnbEOy01zOuZ1bU27I4nwk/Tq4eugZMUmnBHca9OOolIw2y/XI+TMXUFrcmUC515ESCoUQSBz4/7SXBSt20EMqUdo2rDbHcAMl0bufOCPAywYR2K2f2l0Pf0Mru4e1PWYZUZwXQlNT2io1U248CB5SzidWHHGKtNnRFpq0LWFvAKdYaXNCX1kPj8G18yjWTBnhEBFPrVMWDYCeO1UUyz6sdB+US2OkYYmh14HjGmDGGyNn5EB5nUyUppA4FuKHiOHeI+RIgFIkU7hVLMbKoJJ6AC5MWqyF30xPq8FWPNgEH85C/K8YjPtvbfq4lyQSEBORRyHU98hTnPMyc2Vg708xE6vRAluMUialK+iFGHY8TNV3DdRhUUcs9/HO15nuUWlh3fWvh6QYqVWozZL6aZQSwv11t4GRzVx0Xw3y2XLF7Xpo1y2Yg6gcABxa/cJSdrbXTE4kKmbskA3UjS1zx5d8e70VVo4dnTjlsVcllYEgNcE3HHkZVGq1Fc1BlubA5TYHuseHAc5xSto740tlmxbhF1+Mpu0saajhFtYnW/AAdYbam2CwsTwGsqGMxPa7LHgb2JHl3wxY3JmcuVR0G2tj8xCKewmg/MV0ze8mR64sxLAZR14fM/SAE7FFRVI4pScnbJFMaYZcWTzkYoj7D4YmOxCquLbhebpuNtENgKLWP3l81bX5zAKnEzc/Rd2tnpfk9UfEGIC3JjOikwv2nMthoTp4T2mkb46nls4/owESNNFAAnRvS2ghAvx5zowPmynjHS+UsDytp3C4+8O4yRxtGpTUVnGSoQpyICgNMqQXOXgc1gR3iXTZG79KgASA7ixzEcD+UcpF+kCoVRCDbMHpt3q2ViP9IPlIKNLZOEGlsq+zNuGiUekihkDA3Js2YWuy/iHXpDYSoj1EUswFQg1GYDsux7RT8vjINFtbThx7+8xyDra95iaVUSytXXaNr2Vs6jQTLTUagZm4l/Eykby7oCmWrUe0mpZNMycTdeq93KQP9shjldmQKB7LvYg2BPHQ8TPdu1KNl9TWLnnZmJAt948D85nn1Fp/wA+jTpxpIumwt3yMIlZOziBeoh4XB4I3cQPjLxh6pZFJFiQCR0JHCYfsneLE0CAlQlR9xzmW3TXUeU2DZG0RXpJVXTMNRxsRoRK46TpG8fFaRLI2scRkjax2DKlRU6dOgAkiIdLiFtOtGIiK1MqQRxHDvHMSUo9oAiCxVK4vKq+9L06ppBLi/HlH2IuqrKf6T6mXDIv46qA+SsfpHX94nALEKABck8hKVvZvSuLREsQqOHDfisrDQchrxM1GEpdGZTUeyYwFMLSUacJBY/FAGRFXeCoFyqcotbTj7zI8O79pm+Pz6S0cMvbJyzL0W3dFkrYyjTcBlYvoeDMtN3UHqLqNPKaPXQYlKi8GRxlJ/Eo4+BuR5zJtzCzbRwiJyqXP8Ko7P8A6Qwm219l5XepSABfV14Bm/EOjHn1+fP+ohTSRf8ATztWykbU2VVxSvh8uSygZ2F1FyOBHtcDoOPdC4ncek1Moz1M54PoFUjkEHEeJJ6ES3YV9CzC2ugIsQb21vz+kqy4/EYio7Uq6D1T2aiUNyvEXa/MEkG3EW5Tlr0jsT9sy3eLdurg1c1mBuwSmwOj5tSwHKyg3vz98qzJzv4859KjF56YdR2WuGBHBlJVgQeNiCPKYPvhs71GKrIBZS2dANBlftadACWH8sviado58sWtlfqUyNeXI8oISRo8B4RNTCA6g2+Us4P0R5IBhyLy1bKUZCe4/KVU4dl1tw6GSWFxpC8ZNpm0xhifaPifnNw9FB/9OT/7KvzWYXUa5v4/Obp6K/8A22n3vWP+q37QAvFMwjhSMp5xsWIUkcY3o4Is4dzcjUD6xNgAq4RgTxnSRqVVBM6A7MGr774gt2VRF5AgsfM3Ea7b3h+00UV0Cuj3Nr2YEEXHTwkKb2seHKDyyVnOpu9iFqlT1ubSUqIq2XMtyFbQg2uPZPf3RlXrKyqCozA3zDiR0I/eLxmyqlNabsOzUUMD0vyboYOKkvg5xUlYfF0GXoVYDUHMLjiDbgR0gFZ1AU+ze9iBrDbKxjUmvlDKfaRhdXHMHp4zSMLuzhKyJURTlcBgCSQAeIHMW/aYd9JWZjFvSZUamwayIKhpsVYKVKdoZWF73E0LciiEw3ZJILsRfiOGhklszBrRQU1JKr7N9bDp4R3QQKLDmSempmo42mnZSONRlY4QaiPVjKmdY9UyxQUIoCIvKltbfH1Vb1SJm7+kALllnZZR332sbWE4b7fljCi4Y6oERm6CV3ZWCV2LsoMbJtz7SpQGxGtuslcNiko4d6jcEUs3U25DvJ085pfDD72VH0j41UCYZAAW7bkclHsr52+Uz6s9zHm1sc1ao9VzdnPu/KO4DKPKRxM74R4xo4py5Ss9RLmGVLaCJo8/6/rhCFTayi7MQqgc2Y2Am+lZnbdGjeh3Yys1TGMNUJp0u7s/8Ru/2gPIy5+kPbjYTBu6NlqOQlMjiCdWbyVW87R9upsgYXDU6Ol0UZj1Y6s3mSZkXpk2963EigjXSgtj09Y/afxsMg7iGnnTfKTZ3wXFUWTdfeVMbSTDg1DVQIauZu0yoF9ZUDXuQzsR11Ef4bYHqHYozdq9rE3IY/ePP/aK9G27qYfC06oW9Wuiu7Ea2cBlQdAAR53Mb7zb508HjqWHfVAhNZ7XKu5GThyAXUdHHSQliu2jojla16LFg8Lko5OFiSPPtH4kzLvSlgLinWX7pNN/A9pL+Bzj+aamm0qNWn6xHUoRfMGGWw1vfhM13y3moFfVUx6wFgWcger0PsgH2x15a85mFqSo1OnFmcqLTxmkntekub1qKq06hbsKbim6kesp9QASGW/3WXvkWVJnotpq0cCTvZyvy4xFDDMS1iAF1N78O63GESnbuixUVWt+JMvmb2MlNOtlIvZHsOE3r0aqV2bhwefrG8jVcD5TCXFvID5T6D3fomnhsOlvYo0gfEort8WMgULEjxdevkUmMabwGJcu4QcOcAoD2m1HOdJimVAAnQoLMsxWycDRQhwiZlKhnN2Fxa635+EpNLBqyuxqJlQ2NiM9tQGC81vb3ycrVEqMWdAzHmTcxAwWHPGmJOkYeO30Usrzve8s+H21VrNSVKa50XLbitRFF8rKdCdCfOSCbLw34PlDU9l4cG65lOuo7xbrG7Bxk9ETtfH0awBXD+rewzFToT/Db4y1bhYsBDSzk2uyqRqtzrY9L6698ZLs+nnzlyx/OAwOltRJbYr0cPmyKO0e0e1fwF+XdMJSUtmYwkpWy1o8IrSNTatI84Vdo0vxD3ytliUpNrH6mRGDxCOeywknnAFzyjERm8+1lw9FmvqRpKJsp6dNDicSQM5OW8ebbc4zEBAewp18BIv0hploIg4KdPdE2NIdtt3Zv4l906nt7ZxNha/hMph8Ge2vjG9IFtmwYHEYdyXoDVTrpaMN99qhaK0kOtUhmHRVPPxNvcYPcZNHHhKlt3aC1cRUPFQxVOll0Hv1PnK4FcrZLNpUhqx0Hvg4WtppBCegzhQdBoJa/R9sr7Rj6QIulAGs/MXXRB+og/yyroPhNc9EGzMmGqYgjtV3IXT/AC6d1HvYv8JPPKolMMblZctvbUTDUKld/ZRSbfjY6Ig7yxA858u7SxDVKj1HN2YszHqzEkn3map6X9v56i4RD2KVme3N2Gg/lU+9z0mT1RcHwM4a0dh9QbMKUsKjsbIlJGJ6BUBM+cNs4tsTiKlduNR2bwB9lfJbDymyekbaBw2zEoA9usEpnrkVQXPwC/zzGEsFLGXww1bJZZU6QqnU/wCG1JXKm4cjOQjX7Oo4Zl0N+hboJr27u6NPDIjvZ6lgczAEKba5By8eMzXcfZi4jGUadRCyMxZgASAqqSue3BcwUHx75vyYXIouQ1uBAsO7T3SGeO9ey2GVLZk/pI3VcI2NpqLCwqKBrk+7UNul7HuseAmYmvYWHGfTG8u0qGHwzviCMhVlK8S5ZSMijmTf9+U+anw9jx7J1B52+o4R4+VUhTabtghUP3hcf1wjhKJbtDgqm54eyLj9o3e44QuFxDDMt9HUqR32NvjNP4xL6gdc3vN6xFbK+UE2UKvH8KgftMGRczgdWA95tNlrYrM7H8x+ciyiJZK55ak8JI7PUKONz169TICjWtYjlJnCvEgZK550b550YjGFMMjRusKpmCg5RoVWjZTDqYAHVosNArCAwsYVXig8EDPQYrHQ7w2IKOGBtr8Je6jZ6X8Qmdgy77ErZ6I7tI4vZmS0U7OcNXD/AHSbNB+kYhsOrDgTpJzeHA5gdOPzlE21jycMaD+0jaeE0/phdlNhsL7S+MBDYY9pfGD6Bdov+ycYaOHruvtZcqfxv2V917+Uqqqq2UDMxIuekc1sQxX1a6Le7HvsQAPeYyphVYcSfpOzBFxim/ZzZ5KUmkHrcYikbmeVDPaOgJ8vr+06fZzJaHAVmsqi7OQqjqzEBR7yJ9DVKlPZ2Av93D0lAH4mACqPFmt75i/o8wHr8fSFrrSzVW6djRL/AMxB8pbvTHtv/DwiHT/FqfFaa/8Ac3ks5c0uUkjpwx4xszDH4pnd3c5ndizHqzEkn3kwm7eD9disPT/HVpg/whgzf6Q0ZO15ZvR3RU45ajkhMOlSu/gq5QD5tfyMkypLelzanrsaKS+zRUL/ADvZ2PuKDylBrEFgvIanvPIR9tbHGpUqV29qozv5sxNh4XtI+kLC54nUzqSpKP8ApzXbci0bmby/YqtnW9FyA9uK20VxbVgL6r+/HTtub+4KhRJFZarkXRUYOxJF1zEXCD+I9dJg9Z9DGra6iRyxi3ZXHJpExvFvJXxz56zaL7CLoiDuHMnmTr8oyoHMpTmBdfEcR5xrUpgKCGvfjblPKb21/rWYjJFJJhB7j0M9RLMBbjcr5A2HvEXWp3Acc+PcRpr8J7RbMPzKQfEXAP8AXcJpoymAwAvUpj8yf9wmoU6t2PeTM22Gl66dxv7gTNBw7WM52WRMYd5K4KtY25SEoNHucgX6QGWgWnSKo7S7I1nQsVMy4RaxEUpkyiDKYZDAKYtWisY5UxYMArRatCx0HWLg1MVeIEhYlk3Xr6MkrV5JbCrZag74KWwkrRacfRzKZnW8WwWqOShUMRYgm1++aYxvKtvI4pgke1bTulkRujOxubiOqfqiMRu3VojOzJYEW11J6Ac5J1ttVFFs5Zu4ae+QuN2jVqMC7nuB1HlLxh7aJSl6TE4ioTqbwFFteHLr4QOJqEm4Ok7Ctdv66yrnckiShUR9VM8ZrWHQfOCq1Ltbv/8A2Fw2Feu+RFLMbmw6DiZuU0rZiMLpG0+iLZK0cI2JcANXOYk/dpJfL4A9pvMdJlm8e1jisTUrm9nYlQeSDRF7rKF87zS97NsHD7IpUbBKtdFolRplVFArEDktgF/6gmQzmW9nT1oRaTexK5p4bFOL3qlKAP5Rd394sJCM0mdoUjRweGzcXWpWt3OwCX8hNRq1ZmV06IDEPma3IfOc7QFC/GLZrSilezHGtCKzaQNFtbdZ1VrmDBsZGUt2UitDuhqGW9uY6kjgPDjG5BvYwhcghlNjEu5Yljx4zNU2au0Ep1Tw5QlsrBhqBx8OB8R9RGg4XhUfS39dLeBmlITQ+2CpFUnorj9Qy/vLwhlS2FRzNcfeZB5Agt8jLUa+tgbAaD6yTRtMksM46yRpuDKu+IP4ovD4xkcdolTEaLGQOs6Ra4q/x+c8gBWW4z1TPcULMfEwStJs2hwrQitGwaLVpk0kOQ0IjRsrQitFZqh0rRYeNVeLDxWOhzmjnAVAHQsSFzC5HEC+pF4wDxSvM2Oi775bIrphjWwmJqZkUsyHIc6D2shVQQwFzbW/jMXrbVdtWdmJ5sxP7zVaW9JSgyuAVSmxJJ9oG4VR8Zil5248jo4541dMdPiCeME9QwV55NObZlRSC5hbvhaPZ7XM8B+8e7L2Dia4L0cPUqKDa6oWW/S/OSCboY8m5wlf9DTUVexN1ohaa/eml+hnF4T1lWnUNsQ9vVluDIBdkT817m3MW6SCwW4GOrOtIUGpqT2qlQZUUczrqx7gPrNLw251PZuFqPhqTV8SVsjEAsXOgIBNlVfaPhzhP4hR+sz30ibVFfGsim6UL0ktwJU3qMPF7j+QSqM0sQ3H2m2v2RyTqSXpgkniTd+MDtTczG4dFesioHYIqmojOzNwAVSfnCqVGrIBELsEHF2VR4sQP3lk9Jbha9KiOFOhTW3S2Y/uJK7D9HuPTE03q0bIhzFg9NtQNBYNfn05QO/W6GPq42rUp4eo6MECsMtrLTQEceoMztMNNFBzgDvgmeTx3I2jzwlX3D6wf9zceOOFqe4fWJyBRIGJk6d1Mb/8dh4lR+88/urjP+Q36k/8phyX02ov4e7qbDbHYhMOhClrksRfKqi5NuZmlU/Q0g9vEOf4VUfMGRHoo2JiKOPD1KZVfVuLllOpK8gZttV5pytaFVPZmA9DmGtriKw8k/8AGBr+h7DgHLjHH8SqflaaPWeQ20X0MxyaNKNmQ4vZX2Ku2HDh8gV866e2GFrX4xLV5MbxbErNic6IzXRR2eHHgZHf2Fib/wCC/uhdjSobq8Ix0hxsXEj/ACX/AEmIrbMxIFhRqa/kbSAAlxlp0MuwcXyw1S3LsGdHxM3+4zxh7R8b+8fW8AGhMS3A9dP3H7++CCyciiCKYsNBXnXk2UQ4DT0PG+ee55g2Og8WKkZipFK8BjwPFB40DwivEwJKls+hiABVVjl4ZWKjzHOc252FLXy1FXoH/ciOt2MSq1LPbKRz4S31sBhqo7S02851YacTkzWpFXw26GzPvBv5qhHyMseyPR/s5wHFNWTl22bN55uEC+5WDf7lr9HMlsHsGjTUIqkKosBmM04U7QlO1RbMJRp0kWnTVURRZVUBQB3AQ2YdfjKsdmU+/wDU31nh2Ynf+pvrHyfwzxj9LVnHUe+cai/iHvlOqbLTqf1v9ZH1tlITxc+Dt9Zl5K7RtY0+mX5sUg4uvvEqlHA/aMd9prVabU6Qy4dFYEBvvOw/Fp/VpDNsekfaVj4s0BT3YwvEIR4Mw+RiWZfB+H9zTBWU84vMOszhNh0l9kuP+o/1hVwCrwZ/1v8AWHmXwPC/poV55KCEy8Hqfrf6zw4xh/nP+sx+WIeF/S+5R0lQ21TeviWSmhIpqqmwAGY9o3PDgVjD+1GH+e364XZ+8qYfNdw2YliWPaJPHWJzUlVDUHF2mSWydjYhKiuygAcdRex48JY6olV//odDgVPlYz19/sJa7Zx/LCKSVIzJtu2TtRJGYrC5tJBt6SsJmtlcDkcvH4wOI9IeGHAN7oSaXYRUn0WvYyFGcMNOxlPWwIMlsw7plp9I6G+RCfEgSG2lvhja5ARUpr3EljpzMFNIbjJm0kr3fCBaqnVfhMPXaePFu1+H7zchbrGVepi258hwduRv1jWSIvGze/XD8Q94nT57tjB99/1t9Z0flQeJh7IbErcjheN8TSzG4YiezpzWzooa/Zn5PfxESy1B0M6dBthSBNiGHEfGJGM6idOmqVGbCrjBDpXE8nTEjcQ61RCrUnTpg0HpPrbrJChu/WIvmVQddCb/AAns6dGD2QzeiQp7O9V7eJcW5Lm/3jilvDSpkgPVcjqfrOnSsmyKSEYv0h5dEp+8yMbfPF1fYCjxM6dIyky8IoJhPtlY3qVwB0AJltwKuqhSwa3dadOkU2+yrSQ+FacXBnk6aMgKjEQYxBnTojR61cc5WNt0FZuySG8TadOlcX5Inl/FlZrOVJDHUcecEaonTp1Ps5jlrCFOKW2t506ZbGiNxSqeAMbfZdRfh4zp0xMpHssmE3fSwIJ11k7g9nqgsJ06cxZjsUFnv2dZ7Om0ZYj1AnTp0Yj/2Q=="
+                                    alt=""
+                                />
+                                <h2>Rohit Raghuvanshi</h2>
+                                <h4>System Design Specialist</h4>
+                            </div>
+                        </div>
                         <br />
-                        <h2>Experience</h2>
-                        <ul class="experience-list">
-                            <li>
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlQmzTznqVaGyOD8BJffMLbP5gzFB2SYCcag&usqp=CAU" alt="ABC Company Logo" class="company-logo" />
-                                <div class="exp-container-div">
-                                    <div class="company-name">Work with Warnie</div>
-                                    <div class="role">Marketing Manager</div>
-                                    <div class="date">2018 - Present</div>
+                        <h1>See posts by this company</h1>
+                        <br />
+                        <div class="post">
+                            <div class="post-upper">
+                                <img src="https://cdn.pixabay.com/photo/2021/12/14/22/29/meta-6871457_640.png" alt="" />
+                                <div class="post-user-details">
+                                    <h2>Meta</h2>
+                                    <h3>2d</h3>
                                 </div>
-                            </li>
-                            <li>
-                                <img src="https://i.pinimg.com/564x/b0/c7/53/b0c753e3009cc1a6bbb25314ff4b76fc.jpg" alt="XYZ Corporation Logo" class="company-logo" />
-                                <div class="exp-container-div">
-                                    <div class="company-name">Social Leaf</div>
-                                    <div class="role">Marketing Specialist</div>
-                                    <div class="date">2015 - 2018</div>
+                            </div>
+                            <div class="post-lower">
+                                <p>
+                                    A year ago, I took a leap and moved from Bangalore to the heart of tech innovation in Silicon Valley. Joining Meta's Headquarters in the US has been an incredible
+                                    journey, working on innovative social media and AR/VR projects. I'm thrilled to be part of the Meta family.
+                                    <br /><br />
+
+                                    "Change is the only constant."
+                                    <br /><br />
+
+                                    After over 4 years at Meta India, I felt it was time to seek new challenges. Leaving my home and family was tough, but the opportunity for growth was too great to
+                                    pass up.
+                                    <br /><br />
+
+                                    I also miss the vibrant city life in Bangalore and teaching workshops at local tech meetups. So far, I have learned so much from my colleagues and mentors, who are
+                                    some of the brightest minds in the field.
+                                    <br /><br />
+
+                                    Moving abroad is not only a career choice, but a life choice. You will grow, learn, and discover new aspects of yourself and the world around you. »
+                                    <br />
+                                </p>
+
+                                <div class="post-lower-icons">
+                                    <span>
+                                        <i class="fa-regular fa-thumbs-up">&nbsp;</i>
+                                    </span>
+                                    <span>
+                                        <i class="fa-regular fa-comment">&nbsp;</i>
+                                    </span>
+                                    <span>
+                                        <i class="fa-regular fa-paper-plane">&nbsp;</i>
+                                    </span>
                                 </div>
-                            </li>
-                        </ul>
-
+                            </div>
+                        </div>
                         <br />
-                        <h2>Education</h2>
-                        <h4>Bachelor of Business Administration in Marketing - University of Pennsylvania (2014 - 2018)</h4>
-
-                        <br />
-                        <h2>Skills</h2>
-                        <br />
-                        <ul class="skills-list">
-                            <li>Strategic Planning</li>
-                            <li>Data Analysis</li>
-                            <li>Content Marketing</li>
-                            <li>Social Media Management</li>
-                        </ul>
+                        <div id="chart_div_meta"></div>
                     </div>
                 </div>
             </div>
@@ -105,7 +148,7 @@
                                     <i class="fas fa-map-marker-alt"></i>
                                     <div class="cta-text">
                                         <h4>HeadQuarters</h4>
-                                        <span>Sunnyvale, California, United States</span>
+                                        <span>Menlo Park, California, United States</span>
                                     </div>
                                 </div>
                             </div>
@@ -114,7 +157,7 @@
                                     <i class="fas fa-phone"></i>
                                     <div class="cta-text">
                                         <h4>Help & Support</h4>
-                                        <span>+1-3234-8569-5471</span>
+                                        <span>+1-234-567-8910</span>
                                     </div>
                                 </div>
                             </div>
@@ -123,7 +166,7 @@
                                     <i class="far fa-envelope-open"></i>
                                     <div class="cta-text">
                                         <h4>Mail us</h4>
-                                        <span>help.linkedin@gmail.com</span>
+                                        <span>support.meta@meta.com</span>
                                     </div>
                                 </div>
                             </div>
@@ -138,8 +181,8 @@
                                     </div>
                                     <div class="footer-text">
                                         <p>
-                                            LinkedIn is the world's largest professional network, where millions of professionals come together to connect, learn, and advance their careers. Join us to
-                                            network, discover opportunities, and stay updated on industry trends. Build your professional presence today.
+                                            Meta is a global technology company focused on bringing the world closer together through its platforms and services. Join us to connect, discover
+                                            opportunities, and stay updated on the latest industry trends.
                                         </p>
                                     </div>
                                 </div>
@@ -150,41 +193,32 @@
                                         <h3>Useful Links</h3>
                                     </div>
                                     <ul>
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#">About us</a></li>
-                                        <li><a href="#">services</a></li>
-                                        <li><a href="#">Our Services</a></li>
-                                        <li><a href="#">Expert Team</a></li>
-                                        <li><a href="#">Contact us</a></li>
-                                        <li><a href="#">Latest News</a></li>
+                                        <li><a href="#">Careers</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Terms of Service</a></li>
+                                        <li><a href="#">Community Guidelines</a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
                                 <div class="footer-widget">
                                     <div class="footer-widget-heading">
-                                        <h3>Subscribe</h3>
+                                        <h3>Follow us</h3>
                                     </div>
-                                    <div class="footer-text mb-25">
-                                        <p>Subscribe now to receive news letters based on your recommendations!</p>
-                                    </div>
-                                    <div class="subscribe-form">
-                                        <form action="#">
-                                            <input type="text" placeholder="Email Address" />
-                                            <button><i class="fa-brands fa-telegram"></i></button>
-                                        </form>
+                                    <div class="footer-social-icon">
+                                        <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                        <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                        <a href="#"><i class="fab fa-linkedin linkedin-bg"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="copyright-area">
-                    <div class="container">
+                    <div class="copyright-area">
                         <div class="row">
                             <div class="col-xl-6 col-lg-6 text-center text-lg-left">
                                 <div class="copyright-text">
-                                    <p>Copyright &copy; 2024, All Right Reserved <a href="https://www.linkedin.com/in/maanassehgal">Linkedin</a></p>
+                                    <p>Copyright &copy; 2023, All Right Reserved <a href="#">Meta</a></p>
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
@@ -193,7 +227,6 @@
                                         <li><a href="#">Home</a></li>
                                         <li><a href="#">Terms</a></li>
                                         <li><a href="#">Privacy</a></li>
-                                        <li><a href="#">Policy</a></li>
                                         <li><a href="#">Contact</a></li>
                                     </ul>
                                 </div>
@@ -203,25 +236,53 @@
                 </div>
             </footer>
         </div>
-
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            integrity="sha384-q9h2/dDgfJh0GMVch66sLT+K3CTzjZZ5DF0BEVmA2saFNYlP7T+tBviDsBYMOkXj"
             crossorigin="anonymous"
         ></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-            integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        ></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-            integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        ></script>
-        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-        <script src="../js/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+        <script src="https://kit.fontawesome.com/3d306cb97a.js" crossorigin="anonymous"></script>
+        <script src="../js/main.js"></script>
+        <script>
+            google.charts.load("current", {packages: ["corechart", "line"]});
+            google.charts.setOnLoadCallback(drawMetaChart);
+
+            function drawMetaChart() {
+                var data = new google.visualization.DataTable();
+                data.addColumn("number", "Month");
+                data.addColumn("number", "Earnings");
+
+                data.addRows([
+                    [1, 45],
+                    [2, 50],
+                    [3, 60],
+                    [4, 55],
+                    [5, 70],
+                    [6, 65],
+                    [7, 75],
+                    [8, 80],
+                    [9, 90],
+                    [10, 85],
+                    [11, 95],
+                    [12, 100],
+                ]);
+
+                var options = {
+                    hAxis: {
+                        title: "Month",
+                    },
+                    vAxis: {
+                        title: "Earnings",
+                    },
+                    backgroundColor: "#f1f8e9",
+                };
+
+                var chart = new google.visualization.LineChart(document.getElementById("chart_div_meta"));
+
+                chart.draw(data, options);
+            }
+        </script>
     </body>
 </html>
