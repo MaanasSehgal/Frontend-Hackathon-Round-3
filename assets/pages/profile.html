@@ -22,17 +22,59 @@
             .post-content {
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
-                background-color: rgb(46, 15, 74);
-                height: 600px;
-                width: 300px;
+                justify-content: center;
+                align-items: center;
+                background-color: #18181b;
+                color: white;
+                border: 2px solid #6441a5;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+                height: 400px;
+                overflow: hidden;
+                width: 30%;
+                border-radius: 20px;
+                margin-bottom: 30px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                min-width: 250px;
             }
             .post-content img {
-                width: 100%;
+                width: 80%;
                 height: auto;
                 border-radius: 0;
                 margin: 0;
-                margin-bottom: 30px;
+                border-radius: 20px;
+            }
+
+            .card-ctr {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .card-ctr p {
+                padding: 10px;
+                text-align: left;
+            }
+
+            .post-content:hover {
+                cursor: pointer;
+                transform: scale(1.05);
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.2), 0 0px 40px rgba(0, 0, 0, 0.1);
+            }
+
+            .card-container-profile {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-wrap: wrap;
+                height: auto;
+                width: 100%;
+            }
+            .post-heading {
+                color: #f4f4f4;
+                position: relative;
+                right: 22vw;
+                margin: 20px 0;
             }
         </style>
     </head>
@@ -116,14 +158,25 @@
                             <li>Social Media Management</li>
                         </ul>
                     </div>
-                    <div class="post-content">
-                        <h2>Your Posts:</h2>
-                        <div class="card-ctr">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwBjdeu3bSIuy_8O3PHEKktz-La5D7hjk8mw&s" alt="" />
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quisquam in laborum quasi alias, corrupti soluta enim, at laudantium modi exercitationem inventore iste
-                                quibusdam repudiandae nobis expedita dolor repellat magni.
-                            </p>
+                    <h2 class="post-heading">Your Posts:</h2>
+                    <div class="card-container-profile">
+                        <div class="post-content">
+                            <div class="card-ctr">
+                                <img src="https://t4.ftcdn.net/jpg/00/68/65/51/360_F_68655192_ND7u4vWigL6kfYB804JXvvGDAiih2jBG.jpg" alt="" />
+                                <p>
+                                    As a passionate marketing professional, my focus is on driving organic growth and engaging audiences in meaningful ways. With a keen eye for detail and a strategic
+                                    mindset, I thrive on crafting compelling narratives that resonate with target demographics.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="card-ctr">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6wJuiHqxpfT4pPRNG3wtbf22-rQLJutK56A&usqp=CAU" alt="" />
+                                <p>
+                                    With a relentless drive for success, I am committed to elevating brands through innovative marketing strategies. By harnessing the power of storytelling and
+                                    creative content, I captivate audiences and foster genuine connections that drive organic growth.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>

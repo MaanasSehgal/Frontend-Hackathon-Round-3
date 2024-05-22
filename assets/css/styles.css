@@ -67,6 +67,33 @@ nav h1 {
     font-size: 24px;
     text-decoration: none;
     margin-right: 20px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+.logo h1 {
+    font-size: 40px;
+
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(90deg, #5e05e3, #a959d7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
+    transition: text-shadow 0.5s ease, color 0.5s ease;
+}
+
+.logo:hover h1 {
+    color: #9146ff;
+    transition: text-shadow 0.5s ease, color 0.5s ease;
+}
+
+.curr-page {
+    text-decoration: underline !important;
+    color: #9146ff !important;
+    text-underline-offset: 5px !important;
+    font-weight: bold !important;
 }
 
 input {
@@ -483,7 +510,7 @@ ul {
     padding: 0 30px;
     margin: 18vh 0;
     border-radius: 3vw;
-    width: 60vw;
+    width: 80vw;
     height: auto;
     background-color: #18181b;
     display: flex;
