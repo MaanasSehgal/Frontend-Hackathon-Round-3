@@ -15,6 +15,26 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="../css/styles.css" />
+        <style>
+            .icons i {
+                color: white !important;
+            }
+            .post-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background-color: rgb(46, 15, 74);
+                height: 600px;
+                width: 300px;
+            }
+            .post-content img {
+                width: 100%;
+                height: auto;
+                border-radius: 0;
+                margin: 0;
+                margin-bottom: 30px;
+            }
+        </style>
     </head>
     <body>
         <nav class="navbar">
@@ -25,16 +45,16 @@
                 <input type="text" placeholder="Search posts" class="search-input" /><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
             </div>
             <div class="navbar-right">
-                <a href="#" class="nav-item">Home</a>
-                <a href="#" class="nav-item">My Network</a>
-                <a href="#" class="nav-item">Jobs</a>
-                <a href="#" class="nav-item">Messages</a>
-                <a href="../pages/notifications.html" class="nav-item"><i class="fa-regular fa-bell"></i></a>
+                <a href="/" class="nav-item">Home</a>
+                <a href="./connections.html" class="nav-item">My Network</a>
+                <a href="./jobs.html" class="nav-item">Jobs</a>
+                <a href="./messages.html" class="nav-item">Messages</a>
+                <a href="./notifications.html" class="nav-item"><i class="fa-regular fa-bell"></i></a>
                 <div class="nav-item profile-dropdown">
                     <img src="../../public/girl.png" alt="" />
                     <div class="dropdown-content">
-                        <a href="profile.html">Profile</a>
-                        <a href="#">Edit Profile</a>
+                        <a href="./profile.html">Profile</a>
+                        <a href="./editform.html">Edit Profile</a>
                         <a href="#">Logout</a>
                     </div>
                 </div>
@@ -93,8 +113,19 @@
                             <li>Social Media Management</li>
                         </ul>
                     </div>
+                    <div class="post-content">
+                        <h2>Your Posts:</h2>
+                        <div class="card-ctr">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwBjdeu3bSIuy_8O3PHEKktz-La5D7hjk8mw&s" alt="" />
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quisquam in laborum quasi alias, corrupti soluta enim, at laudantium modi exercitationem inventore iste
+                                quibusdam repudiandae nobis expedita dolor repellat magni.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
             <footer style="margin-left: 0" class="footer-section">
                 <div class="container">
                     <div class="footer-cta pt-5 pb-5">

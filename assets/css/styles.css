@@ -1202,7 +1202,7 @@ ul {
         width: 90%;
     }
 
-     .page4-container {
+    .page4-container {
         margin-left: 0w;
         width: 90%;
     }
@@ -1825,4 +1825,8 @@ ul {
 
 .post-user-details h3 {
     font-size: 1.3vw;
+}
+
+.card-ctr {
+    color: white;
 }

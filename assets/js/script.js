@@ -102,10 +102,25 @@ function removeConnection(link) {
 
 function addConnection(link) {
     const connection = link.closest(".connection");
-    const clonedConnection = connection.cloneNode(true); 
-    const addButton = clonedConnection.querySelector("a"); 
-    addButton.textContent = "Remove Connection"; 
-    addButton.setAttribute("onclick", "removeConnection(this)"); 
-    const connectionsContainer = document.querySelector(".connections-container"); 
-    connectionsContainer.prepend(clonedConnection); 
+    const clonedConnection = connection.cloneNode(true);
+    const addButton = clonedConnection.querySelector("a");
+    addButton.textContent = "Remove Connection";
+    addButton.setAttribute("onclick", "removeConnection(this)");
+    const connectionsContainer = document.querySelector(".connections-container");
+    connectionsContainer.prepend(clonedConnection);
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const saveButtons = document.querySelectorAll(".save-button");
+    const savedContainer = document.querySelector(".saved-container");
+
+    saveButtons.forEach((button) => {
+        button.addEventListener("click", (e) => {
+            const job = e.target.closest(".job");
+            const savedJob = job.cloneNode(true);
+
+            savedJob.querySelector(".save-button").remove();
+            savedContainer.appendChild(savedJob);
+        });
+    });
+});
