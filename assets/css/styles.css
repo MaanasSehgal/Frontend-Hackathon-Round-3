@@ -144,31 +144,28 @@ nav img {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #9146ff; /* Twitch purple color */
+    background-color: #9146ff;
     min-width: 150px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
     right: 0;
     top: 100%;
-    border-radius: 4px; /* Rounded corners */
+    border-radius: 4px;
 }
 
-/* Hover effect */
 .dropdown-content:hover {
-    background-color: #7d33e8; /* Darker purple on hover */
+    background-color: #7d33e8;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
-    color: #fff; /* White text */
+    color: #fff;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-    background-color: #7d33e8; /* Darker purple on hover */
+    background-color: #7d33e8;
 }
 
 @media (max-width: 768px) {
@@ -1000,6 +997,7 @@ ul {
 .start-a-post-upper iframe {
     width: 40px;
     height: 40px;
+    margin-top: 20px;
     border-radius: 50%;
     margin-right: 10px;
     margin-bottom: 20px;
@@ -1158,10 +1156,11 @@ ul {
 }
 
 .add-a-comment img {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     margin-right: 10px;
+    margin-top: 23px;
 }
 
 .add-a-comment input {
@@ -1200,6 +1199,7 @@ ul {
 
     .page2-container {
         margin-left: 3vw;
+        width: 90%;
     }
 
     .footer-section {
@@ -1266,7 +1266,10 @@ ul {
     gap: 20px;
     justify-content: center;
     padding: 20px;
-    /* height: 100vh; */
+}
+
+.post-lower-icons span {
+    margin: 0 2vw;
 }
 
 .card {
@@ -1352,10 +1355,14 @@ ul {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 650px) {
     .card {
         flex: 1 1 calc(100% - 40px);
         max-width: calc(100% - 40px);
+    }
+
+    .mySwiper {
+        margin-top: 10vw;
     }
 }
 
@@ -1731,4 +1738,56 @@ ul {
     flex-direction: column;
     align-items: center;
     margin-left: 16vw;
+}
+
+.companies-page1-container {
+    padding: 0 30px;
+    margin: 18vh 0;
+    border-radius: 3vw;
+    width: 60vw;
+    height: auto;
+    color: white;
+    background-color: #18181b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.companies-page1-container h1 {
+    color: white;
+    font-size: 2vw;
+}
+
+.companies-page1-container img {
+    border-radius: 30px;
+    width: 15vw;
+    height: 15vw;
+    border: 2px solid #9147ff;
+    margin: 3vw;
+    object-fit: cover;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+@media (max-width: 650px) {
+    .hide-follow {
+        display: none;
+    }
+    .post-user-details:nth-child(3) {
+        display: none;
+    }
 }

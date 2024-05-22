@@ -15,6 +15,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="../css/styles.css" />
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     </head>
     <body>
         <nav class="navbar">
@@ -44,55 +45,110 @@
         <div class="main">
             <div class="profile-page1">
                 <div class="profile-page1-container">
-                    <img src="../../public/girl.png" alt="girl" />
-                    <h1 class="poetsen-one-regular">Amelia Johnson</h1>
-                    <div class="profile-left-div">
-                        <div class="profile-headline">Passionate Marketing Professional | Driving Organic Growth & Engaging Audiences</div>
+                    <img src="https://w7.pngwing.com/pngs/523/198/png-transparent-google-logo-google-search-google-play-google-text-logo-number.png" alt="" />
+                    <h1>Google</h1>
+                    <h4>Software Development Mountain View, California 100M followers 150K+ employees</h4>
 
-                        <br />
-                        <h2>Summary</h2>
-                        <h4>
-                            Hi, I'm Amelia Johnson, a marketing enthusiast known for driving growth and captivating audiences. With a background in crafting data-driven strategies, I've contributed to
-                            the success of various brands through effective campaigns. My experience spans roles in diverse industries, where I've honed my skills in strategic planning and campaign
-                            execution.
+                    <div class="company-page-left">
+                        <div class="company-follow-div">
+                            <button class="company-follow-btn"><i class="fa-solid fa-check"></i>Follow</button>
+                            <button class="company-follow-btn">Learn more!<i class="fa-solid fa-download"></i></button>
+                        </div>
+                        <p>
+                            Every company has a mission. What's ours? To organize the world's information and make it universally accessible and useful. We believe technology can and should be a force
+                            for good and that meaningful innovation contributes to a brighter world in the future and today.
                             <br /><br />
-                            Excited to apply expertise, drive impactful initiatives, and create impactful campaigns through collaboration. Let's connect!
-                        </h4>
+                            Our culture doesn't just encourage curiosity; it embraces it. Each day we make progress together by showing up as our authentic selves. We show up with a learn-it-all
+                            mentality.
+                            <br /><br />
+                            We show up cheering on others, knowing their success doesn't diminish our own. We show up every day open to learning our own biases, changing our behavior, and inviting in
+                            differences. Because impact matters.
+                            <br /><br />
+                            Google operates in over 100 countries and is made up of more than 150,000 passionate employees worldwide.
+                        </p>
 
+                        <br /><br />
+
+                        <div class="swiper-pagination"></div>
+                        <h1>Employees working here:</h1>
+                        <div class="employees-card-container">
+                            <div class="employee-card">
+                                <img
+                                    src="https://media.istockphoto.com/id/1448167415/photo/smiling-indian-businessman-in-suit-and-glasses-with-laptop-near-office-building.webp?b=1&s=170667a&w=0&k=20&c=kQ-sWPkU5XP8sG1-MIrGnTe9SkLQBjGvVsa2X8uVHfc="
+                                    alt=""
+                                />
+                                <h2>Ravi Patel</h2>
+                                <h4>Senior Software Engineer</h4>
+                            </div>
+                            <div class="employee-card">
+                                <img
+                                    src="data:image/jpeg;base64,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"
+                                    alt=""
+                                />
+                                <h2>Aarushi Mittal</h2>
+                                <h4>Software Development Engineer</h4>
+                            </div>
+                        </div>
                         <br />
-                        <h2>Experience</h2>
-                        <ul class="experience-list">
-                            <li>
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlQmzTznqVaGyOD8BJffMLbP5gzFB2SYCcag&usqp=CAU" alt="ABC Company Logo" class="company-logo" />
-                                <div class="exp-container-div">
-                                    <div class="company-name">Work with Warnie</div>
-                                    <div class="role">Marketing Manager</div>
-                                    <div class="date">2018 - Present</div>
+                        <h1>See posts by this company</h1>
+                        <br />
+                        <div class="post">
+                            <div class="post-upper">
+                                <img
+                                    src="https://media.istockphoto.com/id/1448167415/photo/smiling-indian-businessman-in-suit-and-glasses-with-laptop-near-office-building.webp?b=1&s=170667a&w=0&k=20&c=kQ-sWPkU5XP8sG1-MIrGnTe9SkLQBjGvVsa2X8uVHfc="
+                                    alt=""
+                                />
+                                <div class="post-user-details">
+                                    <h2>Google</h2>
+                                    <h3>1d</h3>
                                 </div>
-                            </li>
-                            <li>
-                                <img src="https://i.pinimg.com/564x/b0/c7/53/b0c753e3009cc1a6bbb25314ff4b76fc.jpg" alt="XYZ Corporation Logo" class="company-logo" />
-                                <div class="exp-container-div">
-                                    <div class="company-name">Social Leaf</div>
-                                    <div class="role">Marketing Specialist</div>
-                                    <div class="date">2015 - 2018</div>
+                                <h2>+ Follow</h2>
+                            </div>
+                            <div class="post-lower">
+                                <p>
+                                    One year ago, I embarked on an exciting adventure that took me from the sunny south of France to the heart of innovation in the US. I joined Google's Headquarters
+                                    in the US, where I work on further developing AI & Machine Learning NLP systems. A lot of things are happening at Google and in the Google Cloud space and I am
+                                    happy to be part of it.
+                                    <br /><br />
+
+                                    "Every ending is a new beginning."
+                                    <br /><br />
+
+                                    After over 3 years at Google Ireland & Google France with truly incredible people, it was time for me to look for new challenges. Not easy to leave the comfort of
+                                    your home and family in the south of France to seek new challenges, a lot of fear in the last few moments, but super happy I did.
+                                    <br /><br />
+
+                                    I also miss travelling to Paris and teaching at EPITA: Ecole d'Ingénieurs en Informatique, the staff with the amazing Nicolas Boutry, the environment and the
+                                    incredible students I got to teach to over my two years there.
+                                    <br /><br />
+
+                                    So far, I have learned so much from my colleagues and mentors, who are some of the brightest minds in the field. I have also met many inspiring people from
+                                    different backgrounds and cultures, and I am now adapting to the American way of life (so yes, I now try to talk about soccer and not football ⚽️..).
+                                    <br /><br />
+
+                                    A big big thanks to all the people contributing to my professional journey, I am genuinely grateful to count on great friends and mentors. Thank you, merci, go
+                                    raibh maith agat !!
+                                    <br /><br />
+
+                                    Moving abroad is not only a career choice, but a life choice. You will grow, learn, and discover new aspects of yourself and the world around you. »
+                                    <br />
+                                </p>
+
+                                <div class="post-lower-icons">
+                                    <span>
+                                        <i class="fa-regular fa-thumbs-up">&nbsp;</i>
+                                    </span>
+                                    <span>
+                                        <i class="fa-regular fa-comment">&nbsp;</i>
+                                    </span>
+                                    <span>
+                                        <i class="fa-regular fa-paper-plane">&nbsp;</i>
+                                    </span>
                                 </div>
-                            </li>
-                        </ul>
-
+                            </div>
+                        </div>
                         <br />
-                        <h2>Education</h2>
-                        <h4>Bachelor of Business Administration in Marketing - University of Pennsylvania (2014 - 2018)</h4>
-
-                        <br />
-                        <h2>Skills</h2>
-                        <br />
-                        <ul class="skills-list">
-                            <li>Strategic Planning</li>
-                            <li>Data Analysis</li>
-                            <li>Content Marketing</li>
-                            <li>Social Media Management</li>
-                        </ul>
+                        <div id="chart_div"></div>
                     </div>
                 </div>
             </div>
@@ -204,6 +260,50 @@
             </footer>
         </div>
 
+        <script type="text/javascript">
+            google.charts.load("current", {packages: ["corechart"]});
+            google.charts.setOnLoadCallback(drawChart);
+
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ["Year", "Revenue"],
+                    ["2016", 853210],
+                    ["2017", 89950],
+                    ["2018", 1102360],
+                    ["2019", 125840],
+                    ["2020", 1431020],
+                    ["2021", 16181088],
+                ]);
+                var options = {
+                    title: "Microsoft Revenue Growth (2016-2021)",
+                    curveType: "function",
+                    legend: {position: "bottom"},
+                    backgroundColor: "transparent",
+                    titleTextStyle: {
+                        color: "#FFFFFF",
+                        fontSize: 24,
+                        bold: true,
+                        fontName: "Arial, sans-serif",
+                    },
+                    hAxis: {
+                        textStyle: {
+                            color: "#FFFFFF",
+                        },
+                    },
+                    vAxis: {
+                        textStyle: {
+                            color: "#FFFFFF",
+                        },
+                    },
+                    series: {
+                        0: {color: "#FFFFFF"},
+                    },
+                };
+
+                var chart = new google.visualization.LineChart(document.getElementById("chart_div"));
+                chart.draw(data, options);
+            }
+        </script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
